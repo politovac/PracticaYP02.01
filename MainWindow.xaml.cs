@@ -124,5 +124,20 @@ namespace PracticaYP02._01
             BestStudentTextBlock.Text = $"Лучший студент: ID {bestStudent.Id}, Средняя оценка: {bestStudent.GetAverageGrade():0.00}";
             WorstStudentTextBlock.Text = $"Худший студент: ID {worstStudent.Id}, Средняя оценка: {worstStudent.GetAverageGrade():0.00}";
         }
+
+        private void Info_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Данный проект с целью отобржения графика успеваемости студентов выполнил Политов Сергей, группа ИСП-41","Информация о проектк", MessageBoxButton.OK, MessageBoxImage.Information);
+        }
+
+        private void FIO_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Руководителем и проверяющим учебной практики является преподователь Афанасьев Дмитрий Александрович", "Руководитель учебной практики", MessageBoxButton.OK, MessageBoxImage.Information);
+        }
+
+        private void MenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
     }
 }

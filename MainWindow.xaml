@@ -8,6 +8,11 @@
         Title="График успеваемости" Height="650" Width="800">
     <Grid>
         <StackPanel>
+            <Menu HorizontalAlignment="Left">
+                <MenuItem Header="О проекте" x:Name="Info" Click="Info_Click"></MenuItem>
+                <MenuItem Header="Руководитель учебной практики" x:Name="FIO" Click="FIO_Click" ></MenuItem>
+                <MenuItem Header="Выход" Click="MenuItem_Click"></MenuItem>
+            </Menu>
             <Label Content="ID Студента" Width="64" FontSize="10" Height="23"></Label>
             <TextBox x:Name="StudentIdTextBox" Width="100" Margin="5" />
             <Label Content="Оценка" Width="44" FontSize="10" Height="23"></Label>
